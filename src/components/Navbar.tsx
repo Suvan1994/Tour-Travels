@@ -28,14 +28,14 @@ export const Navbar: React.FC<{ hasQuotaBanner?: boolean }> = ({ hasQuotaBanner 
     <header
       className={`${
         hasQuotaBanner ? 'sticky top-10' : 'fixed top-0 left-0 right-0'
-      } z-40 bg-surface-glass backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-b border-border-subtle`}
+      } w-full z-40 bg-surface-glass backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-b border-border-subtle`}
     >
-      <div className="h-20 max-w-7xl mx-auto px-gutter-mobile sm:px-gutter flex items-center justify-between gap-space-md">
+      <div className="h-20 w-full max-w-[1440px] mx-auto px-3 sm:px-5 lg:px-6 flex items-center justify-between gap-2 lg:gap-3 2xl:gap-5">
         {/* Brand Identity */}
         <a
           href="#home"
           onClick={() => setActiveHref('#home')}
-          className="flex items-center gap-space-sm shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-route-active rounded-lg"
+          className="flex items-center gap-2 sm:gap-2.5 shrink-0 min-w-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-route-active rounded-lg"
         >
           <div className="h-9 w-9 rounded-lg overflow-hidden bg-primary-container flex items-center justify-center shrink-0">
             <ResilientImage
@@ -46,11 +46,11 @@ export const Navbar: React.FC<{ hasQuotaBanner?: boolean }> = ({ hasQuotaBanner 
               eager
             />
           </div>
-          <div className="flex flex-col">
-            <span className="text-title-md text-primary font-bold tracking-tight leading-none whitespace-nowrap">
+          <div className="flex flex-col min-w-0">
+            <span className="text-[16px] sm:text-[17px] 2xl:text-title-md text-primary font-bold tracking-tight leading-none whitespace-nowrap">
               {contactConfig.shortName}
             </span>
-            <span className="text-label-sm text-secondary tracking-wide uppercase font-semibold mt-1 hidden sm:block whitespace-nowrap">
+            <span className="text-[9.5px] 2xl:text-label-sm text-secondary tracking-wide uppercase font-semibold mt-1 hidden sm:block whitespace-nowrap truncate max-w-[205px] 2xl:max-w-none">
               {contactConfig.subtitle}
             </span>
           </div>
@@ -59,7 +59,7 @@ export const Navbar: React.FC<{ hasQuotaBanner?: boolean }> = ({ hasQuotaBanner 
         {/* Desktop Navigation */}
         <nav
           aria-label="Primary Navigation"
-          className="hidden xl:flex items-center gap-space-md shrink"
+          className="hidden xl:flex items-center gap-3 min-[1360px]:gap-3.5 2xl:gap-5 shrink-0"
         >
           {NAV_ITEMS.map((item) => {
             const isActive = activeHref === item.href;
@@ -69,10 +69,10 @@ export const Navbar: React.FC<{ hasQuotaBanner?: boolean }> = ({ hasQuotaBanner 
                 href={item.href}
                 aria-current={isActive ? 'page' : undefined}
                 onClick={() => setActiveHref(item.href)}
-                className={`text-label-lg transition-colors whitespace-nowrap ${
+                className={`text-[13px] 2xl:text-label-lg transition-colors whitespace-nowrap ${
                   isActive
                     ? 'text-secondary font-bold underline underline-offset-4 decoration-2'
-                    : 'text-on-surface-variant hover:text-on-surface'
+                    : 'text-on-surface-variant font-semibold hover:text-on-surface'
                 }`}
               >
                 {item.label}
@@ -82,22 +82,35 @@ export const Navbar: React.FC<{ hasQuotaBanner?: boolean }> = ({ hasQuotaBanner 
         </nav>
 
         {/* Actions */}
-        <div className="flex items-center gap-space-sm shrink-0">
+        <div className="flex items-center gap-1.5 sm:gap-2 2xl:gap-2.5 shrink-0">
+          {/* Full Phone Link (visible on lg before nav expands, and on >=1360px alongside full nav) */}
           <a
             href={contactConfig.phoneHref}
-            className="hidden lg:flex items-center gap-space-xs text-label-md text-primary hover:text-secondary transition-colors px-space-xs py-space-xs whitespace-nowrap"
+            className="hidden lg:flex xl:hidden min-[1360px]:flex items-center gap-1 text-[12px] 2xl:text-label-md font-bold text-primary hover:text-secondary transition-colors px-1.5 py-1 whitespace-nowrap"
           >
-            <span className="material-symbols-outlined text-[18px] text-secondary" aria-hidden="true">
+            <span className="material-symbols-outlined text-[17px] text-secondary" aria-hidden="true">
               call
             </span>
             <span className="tabular-nums">{contactConfig.phoneDisplay}</span>
+          </a>
+
+          {/* Compact Phone Icon Button on 1280px–1359px laptops so buttons never clip */}
+          <a
+            href={contactConfig.phoneHref}
+            title={`Call ${contactConfig.phoneDisplay}`}
+            aria-label={`Call ${contactConfig.phoneDisplay}`}
+            className="hidden xl:flex min-[1360px]:hidden w-9 h-9 rounded-lg bg-surface-subtle hover:bg-surface-container items-center justify-center text-secondary transition-colors shrink-0"
+          >
+            <span className="material-symbols-outlined text-[18px]" aria-hidden="true">
+              call
+            </span>
           </a>
 
           <a
             href={directWhatsAppHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center gap-space-xs bg-success-green hover:bg-success-green/90 text-on-secondary px-space-md py-space-sm rounded-lg text-label-md shadow-[0_4px_12px_rgba(27,135,86,0.25)] transition-all whitespace-nowrap"
+            className="hidden sm:inline-flex items-center gap-1.5 bg-success-green hover:bg-success-green/90 text-on-secondary px-3 2xl:px-space-md py-2 rounded-lg text-label-md font-bold shadow-[0_4px_12px_rgba(27,135,86,0.25)] transition-all whitespace-nowrap"
           >
             <span className="material-symbols-outlined text-[16px]" aria-hidden="true">
               chat
@@ -108,7 +121,7 @@ export const Navbar: React.FC<{ hasQuotaBanner?: boolean }> = ({ hasQuotaBanner 
           <a
             href="#quick-booking"
             onClick={() => setActiveHref('#quick-booking')}
-            className="inline-flex items-center gap-space-xs bg-rating-gold hover:bg-rating-gold/90 text-primary-container font-bold text-label-lg px-space-md sm:px-space-lg py-space-sm rounded-lg shadow-[0_8px_24px_rgba(245,185,66,0.35)] transition-all whitespace-nowrap"
+            className="inline-flex items-center gap-1 bg-rating-gold hover:bg-rating-gold/90 text-primary-container font-bold text-[13px] sm:text-label-lg px-3 sm:px-3.5 2xl:px-space-lg py-2 rounded-lg shadow-[0_8px_24px_rgba(245,185,66,0.35)] transition-all whitespace-nowrap"
           >
             <span>Book Your Ride</span>
           </a>
@@ -123,21 +136,21 @@ export const Navbar: React.FC<{ hasQuotaBanner?: boolean }> = ({ hasQuotaBanner 
                 : 'Admin Login — Fare & Policy Settings'
             }
             aria-label="Open Admin Fare and Policy Login"
-            className="w-9 h-9 rounded-full bg-primary hover:bg-primary-container flex items-center justify-center shrink-0 transition-colors cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-route-active"
+            className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-primary hover:bg-primary-container flex items-center justify-center shrink-0 transition-colors cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-route-active"
           >
-            <span className="material-symbols-outlined text-on-primary text-[18px]" aria-hidden="true">
+            <span className="material-symbols-outlined text-on-primary text-[17px]" aria-hidden="true">
               {isAdminAuthenticated ? 'lock_open' : 'lock'}
             </span>
           </button>
 
-          {/* Mobile Hamburger Toggle */}
+          {/* Mobile / Tablet Hamburger Toggle */}
           <button
             type="button"
             onClick={() => setMobileMenuOpen((prev) => !prev)}
             aria-expanded={mobileMenuOpen}
             aria-controls="mobile-nav-drawer"
             aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
-            className="xl:hidden w-10 h-10 rounded-lg bg-surface-subtle hover:bg-surface-container flex items-center justify-center text-primary transition-colors"
+            className="xl:hidden w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-surface-subtle hover:bg-surface-container flex items-center justify-center text-primary transition-colors shrink-0"
           >
             <span className="material-symbols-outlined text-[22px]" aria-hidden="true">
               {mobileMenuOpen ? 'close' : 'menu'}
@@ -150,7 +163,7 @@ export const Navbar: React.FC<{ hasQuotaBanner?: boolean }> = ({ hasQuotaBanner 
       {mobileMenuOpen && (
         <div
           id="mobile-nav-drawer"
-          className="xl:hidden bg-surface-canvas border-t border-primary-container/10 shadow-xl px-gutter-mobile sm:px-gutter py-space-md flex flex-col gap-space-sm"
+          className="xl:hidden bg-surface-canvas border-t border-primary-container/10 shadow-xl px-4 sm:px-6 py-space-md flex flex-col gap-space-sm"
         >
           <nav aria-label="Mobile Navigation" className="grid grid-cols-2 sm:grid-cols-4 gap-2">
             {NAV_ITEMS.map((item) => (
