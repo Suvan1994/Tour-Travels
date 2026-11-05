@@ -8,7 +8,6 @@ export enum JourneyType {
 
 export enum VehicleCategory {
   ALL = 'all',
-  SEDAN_SUV = 'suv',
   URBANIA = 'urbania',
   TEMPO = 'tempo',
   BUS = 'bus',

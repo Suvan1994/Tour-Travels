@@ -10,7 +10,7 @@ export const WhyChooseUs: React.FC = () => {
             The JMD Reliability Pledge
           </span>
           <h2 className="text-headline-lg-mobile sm:text-headline-lg text-primary tracking-tight mt-1">
-            Why Travelers Rely On Jai Maa Durge
+            Why Travelers Rely On Jai Maa Durga
           </h2>
           <p className="text-body-lg text-on-surface-variant mt-1">
             Over 12 years of delivering dependable outstation road journeys across North and Central India.

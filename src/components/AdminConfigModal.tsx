@@ -294,7 +294,7 @@ export const AdminConfigModal: React.FC = () => {
                 : 'text-on-surface-variant border-transparent hover:text-on-surface'
             }`}
           >
-            Vehicle Per-KM Rates (12)
+            Vehicle Per-KM Rates (8)
           </button>
           <button
             type="button"

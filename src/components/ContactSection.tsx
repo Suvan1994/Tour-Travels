@@ -121,7 +121,7 @@ export const ContactSection: React.FC<{ hasMapsApiKey: boolean }> = ({ hasMapsAp
           <div className="lg:col-span-5 flex flex-col justify-between gap-space-lg">
             <div className="flex flex-col gap-space-sm">
               <span className="text-label-md text-secondary uppercase font-bold tracking-widest">
-                Connect With Jai Maa Durge
+                Connect With Jai Maa Durga
               </span>
               <h2 className="text-headline-lg-mobile sm:text-headline-lg text-primary tracking-tight">
                 24x7 Operations &amp; Travel Assistance

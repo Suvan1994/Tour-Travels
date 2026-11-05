@@ -325,9 +325,9 @@ export const BookingForm: React.FC<{ hasMapsApiKey: boolean }> = ({ hasMapsApiKe
                   >
                     <span className="flex items-center gap-1">
                       <span className="material-symbols-outlined text-secondary text-[16px]" aria-hidden="true">
-                        directions_car
+                        airport_shuttle
                       </span>
-                      <span>Select Vehicle</span>
+                      <span>Select Urbania / Traveller / Bus</span>
                     </span>
                     <span className="text-label-sm text-secondary font-bold">
                       Max {selectedVehicle.passengerCapacity} Pax • ₹

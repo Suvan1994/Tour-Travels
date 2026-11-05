@@ -1,6 +1,6 @@
 {
   "name": "JMD Tour & Travels",
-  "description": "Book sanitized sedans, Innova Crysta, Force Urbania, Tempo Travellers, and luxury coaches with live Google Maps route distance, dynamic fare estimates, and WhatsApp enquiry.",
+  "description": "Book luxury Force Urbania, Tempo Travellers, and luxury coaches with JMD (Jai Maa Durga) Tour & Travels. Live Google Maps route distance, dynamic fare estimates, and WhatsApp enquiry.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

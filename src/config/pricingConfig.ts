@@ -1,7 +1,7 @@
 import { PricingConfiguration } from '../types/travel';
 
 /**
- * Central Pricing & Fare Policy Configuration for JMD (Jai Maa Durge) Tour & Travels.
+ * Central Pricing & Fare Policy Configuration for JMD (Jai Maa Durga) Tour & Travels.
  * All per-km starting rates match the official tariff table and can be updated
  * centrally here or overridden at runtime via the Owner/Admin Configuration Drawer.
  */
@@ -21,50 +21,6 @@ export const DEFAULT_PRICING_CONFIG: PricingConfiguration = {
     currencySymbol: '₹',
   },
   vehicleRates: {
-    'sedan': {
-      vehicleId: 'sedan',
-      ratePerKm: 12,
-      oneWayRatePerKm: 14,
-      driverAllowancePerDay: 350,
-      nightChargePerNight: 300,
-      minTripFare: 1800,
-      estimatedTollPerKm: 1.4,
-      defaultParkingEstimate: 150,
-      localPackage8Hr80KmFare: 2200,
-    },
-    'ertiga-carens': {
-      vehicleId: 'ertiga-carens',
-      ratePerKm: 16,
-      oneWayRatePerKm: 18,
-      driverAllowancePerDay: 400,
-      nightChargePerNight: 350,
-      minTripFare: 2400,
-      estimatedTollPerKm: 1.5,
-      defaultParkingEstimate: 150,
-      localPackage8Hr80KmFare: 2800,
-    },
-    'innova-crysta': {
-      vehicleId: 'innova-crysta',
-      ratePerKm: 20,
-      oneWayRatePerKm: 22,
-      driverAllowancePerDay: 400,
-      nightChargePerNight: 400,
-      minTripFare: 3000,
-      estimatedTollPerKm: 1.6,
-      defaultParkingEstimate: 200,
-      localPackage8Hr80KmFare: 3500,
-    },
-    'premium-suv': {
-      vehicleId: 'premium-suv',
-      ratePerKm: 25,
-      oneWayRatePerKm: 28,
-      driverAllowancePerDay: 500,
-      nightChargePerNight: 500,
-      minTripFare: 4200,
-      estimatedTollPerKm: 1.7,
-      defaultParkingEstimate: 250,
-      localPackage8Hr80KmFare: 5000,
-    },
     'traveller-9-12': {
       vehicleId: 'traveller-9-12',
       ratePerKm: 25,

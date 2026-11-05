@@ -1,7 +1,6 @@
 import { FAQItem, TestimonialItem, TourPackageItem, WhyChoosePillar } from '../types/travel';
 
-export const HERO_BACKGROUND_IMAGE =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuCzdXLf87HQIsABFZ3E1FhYAVYkQ4SAfP3dhePkNIvZnKTK0t-lD6GL-ha-PgC1h3PmosYoFxvMgoEcupngR5fT7JCVhJeMBuYhJLrxXZBEMr9inmVSP6funejt5LhG5Yc1mlkaHeKmta6hDXCtapiW2e-oPLOF7-wCarUGb6p7xARNNSnlyd6zLNAKhCv-2MSA7BKol9YMcnEU-5VC8zs7-nwwcP1mEnfJK5YdVDo';
+export const HERO_BACKGROUND_IMAGE = '/assets/images/places_3d_hero.jpg';
 
 export const TOUR_PACKAGES: TourPackageItem[] = [
   {
@@ -13,16 +12,16 @@ export const TOUR_PACKAGES: TourPackageItem[] = [
     originQuery: 'New Delhi, Delhi, India',
     destinationQuery: 'Agra, Uttar Pradesh, India',
     recommendedDays: 1,
-    recommendedVehicleId: 'innova-crysta',
+    recommendedVehicleId: 'urbania-10-13',
     description:
-      'Taj Mahal, Agra Fort & Mehtab Bagh sunset. Smooth Yamuna Expressway drive with flexible highway breakfast halts.',
+      'Taj Mahal, Agra Fort & Mehtab Bagh sunset. Smooth Yamuna Expressway drive in luxury Force Urbania or Maharaja Traveller with flexible stops.',
     highlights: [
       { icon: 'schedule', text: '12–14 Hours' },
-      { icon: 'directions_car', text: 'Sedan / Crysta' },
+      { icon: 'airport_shuttle', text: 'Urbania / Traveller' },
     ],
     highlightNote: 'Fastag Ready',
-    startingPriceLabel: 'From ₹4,500',
-    priceSubLabel: 'est. sedan',
+    startingPriceLabel: 'From ₹8,900',
+    priceSubLabel: 'est. Urbania squad',
     ctaLabel: 'Load Route & Quote',
     imageUrl:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuCwB-ZGuDTK22mu5tTsIK83chfIxGGicnzeJD5h026Jum8X26BDd3XI7ShaNHy8cFpV-AQCZ2xVGndtaHmDsiSflamGmi6DUCxknqYAxzAb7bhHqAcOuq87DzVmezyNYciX_OKyeTe2X9zoBXp83wCgffuodD4EvRGUaauW7MGjgFxbX6j5J3eG1t20mLHuvxObb39M0QUUForDI6Fgt0byKzdVVqmBjXpbYb7W8sk',
@@ -37,15 +36,15 @@ export const TOUR_PACKAGES: TourPackageItem[] = [
     originQuery: 'New Delhi, Delhi, India',
     destinationQuery: 'Jaipur, Rajasthan, India',
     recommendedDays: 2,
-    recommendedVehicleId: 'innova-crysta',
+    recommendedVehicleId: 'urbania-10-13',
     description:
-      'Amer Fort, Jal Mahal, City Palace, Hawa Mahal and evening Chokhi Dhani cultural village dining transfer.',
+      'Amer Fort, Jal Mahal, City Palace, Hawa Mahal and evening Chokhi Dhani cultural village party transfer in executive Urbania recliners.',
     highlights: [
       { icon: 'hotel', text: '2D / 1N or 3D / 2N' },
-      { icon: 'groups', text: 'Ideal for Families' },
+      { icon: 'groups', text: 'Ideal for Squads' },
     ],
-    startingPriceLabel: 'From ₹6,800',
-    priceSubLabel: 'est. round trip',
+    startingPriceLabel: 'From ₹14,500',
+    priceSubLabel: 'est. group round trip',
     ctaLabel: 'Load Route & Quote',
     imageUrl:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuCgHSFoFOHTAz9Co77U-8cyGsoSvw39O-TzMHNUEee6mb6AZh_J6EiL_0h2xBFIbgIuuCULKW62OsM1DbbzpYoSt8_LztKBU1tcw7UD03VXzv62X2yUP2dGlAFYoNmHsksAyJIseipFKLVeAq97_UdM_yumUOlLNic07p_PPaEoiRrWpDiqYXLSkGsk-1jDQpExR8_dakIIEzwyb0ddsIukxF-VL6tOtXtQJkk7AMY',
@@ -54,21 +53,21 @@ export const TOUR_PACKAGES: TourPackageItem[] = [
   {
     id: 'haridwar-rishikesh',
     title: 'Haridwar & Rishikesh Ganga Darshan',
-    badge: 'Sacred Yatra',
+    badge: 'Adventure & Aarti',
     badgeVariant: 'gold',
     corridorTag: 'Delhi–Meerut Expy',
     originQuery: 'New Delhi, Delhi, India',
     destinationQuery: 'Rishikesh, Uttarakhand, India',
     recommendedDays: 2,
-    recommendedVehicleId: 'innova-crysta',
+    recommendedVehicleId: 'traveller-16',
     description:
-      'Ganga Aarti at Har Ki Pauri, Ram Jhula, Laxman Jhula, Parmarth Niketan and river rafting camp transfers.',
+      'Ganga Aarti at Har Ki Pauri, white-water river rafting camps, riverside music bonfire, and cafe hopping in Rishikesh with your gang.',
     highlights: [
-      { icon: 'self_improvement', text: 'Yoga & Aarti' },
-      { icon: 'hotel', text: '2D / 1N Custom' },
+      { icon: 'kayaking', text: 'Rafting & Camping' },
+      { icon: 'groups', text: '16 Seater Traveller' },
     ],
-    startingPriceLabel: 'From ₹6,400',
-    priceSubLabel: 'est. starting',
+    startingPriceLabel: 'From ₹13,900',
+    priceSubLabel: 'est. group trip',
     ctaLabel: 'Load Route & Quote',
     imageUrl:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuCoFtrwsm9DVmnh40dbliXPaFVdkml63ZRUV3ZLlE87QSufVy80C-rLZww5Z99Cgyiaosw1jWtkERu2C8ClF_dE0raMh_nepBO02sl5iwl-PHSnmLU1oA6TIwEwJdnagybN4_nldGtPvyO8xwhgwOvnvIzJwrgCmCIUAgDeuqi3tQOaJX9esC0mid2KD9hlFpHWVzd1oeWIZtcUJAg0yaQwrBfXEq45sx4Y30xOFLc',
@@ -83,15 +82,15 @@ export const TOUR_PACKAGES: TourPackageItem[] = [
     originQuery: 'New Delhi, Delhi, India',
     destinationQuery: 'Vrindavan, Uttar Pradesh, India',
     recommendedDays: 1,
-    recommendedVehicleId: 'sedan',
+    recommendedVehicleId: 'traveller-9-12',
     description:
-      'Shri Krishna Janmabhoomi, Bankey Bihari Ji, Prem Mandir evening illumination and Govardhan Parikrama cab.',
+      'Shri Krishna Janmabhoomi, Bankey Bihari Ji, Prem Mandir evening laser illumination and Govardhan Parikrama group van.',
     highlights: [
       { icon: 'schedule', text: 'Same Day Return' },
-      { icon: 'diversity_1', text: 'Senior Friendly' },
+      { icon: 'groups', text: '12 Seater Luxury' },
     ],
-    startingPriceLabel: 'From ₹3,800',
-    priceSubLabel: 'est. starting',
+    startingPriceLabel: 'From ₹7,500',
+    priceSubLabel: 'est. group darshan',
     ctaLabel: 'Load Route & Quote',
     imageUrl:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuAN6ahUkentBGl2P5DXDbYM2O10agxjlLFAZdVT9RuqJRUyGz40XKGd0MRZaw7Iq5rvbeQ57l2-5Nu7yBUnIgshyqoSiNgTdfrc69rYdLdtLMQuaukEu7umgncntqEWXu3PYkrJYb5NAQCEoFWbC5Dvj6lr_G-XmlsJtjxXHVM0n9poIw6zLaUftVH_71RYPYZ75kAL7JSonxJB9h5aKwQ2Fy7vaRFMzNIFrKqQ2rQ',
@@ -100,21 +99,21 @@ export const TOUR_PACKAGES: TourPackageItem[] = [
   {
     id: 'shimla-manali',
     title: 'Shimla, Kullu & Manali Escapes',
-    badge: 'Himachal Holidays',
+    badge: 'Himalayan Vibe Circuit',
     badgeVariant: 'secondary',
     corridorTag: '5–6 Days Circuit',
     originQuery: 'New Delhi, Delhi, India',
     destinationQuery: 'Manali, Himachal Pradesh, India',
     recommendedDays: 5,
-    recommendedVehicleId: 'innova-crysta',
+    recommendedVehicleId: 'urbania-10-13',
     description:
-      'Mall Road, Kufri viewpoint, Atal Tunnel, and Solang Valley mountain excursions with seasoned hill chauffeurs.',
+      'Old Manali cafes, Solang Valley adventure sports, Atal Tunnel, and Sissu snow paradise in plush Force Urbania with hill-pro chauffeurs.',
     highlights: [
       { icon: 'landscape', text: 'Mountain Specialists' },
-      { icon: 'ac_unit', text: 'All-Season Fleet' },
+      { icon: 'ac_unit', text: 'Panoramic Glass View' },
     ],
-    startingPriceLabel: 'From ₹17,500',
-    priceSubLabel: '5 Days / 4 Nights',
+    startingPriceLabel: 'From ₹28,500',
+    priceSubLabel: '5 Days / 4 Nights Group',
     ctaLabel: 'Load Route & Quote',
     imageUrl:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuA9IBvCTtQZaQ7tHwiMdG5n3D47c6bG3yAtrNwqA5ErPxERNWscVrZ8koFrNR-0dY0HEBas-aPlTnkK1OOx_RcLeEvCpQ7eIm8XSW3l2H5UXb7U9EVFG-CbaStcngO_bvh_oqYVUg3zCGKIcxbtxRB6nj-uRqrWjzsgOLacA7kcpce4lbTNCsA0-hnUq41RnT5AMb4WYcCz7p8oHbgjCA4kOhEkgMOJbnt4QhqIE5I',
@@ -132,7 +131,7 @@ export const TOUR_PACKAGES: TourPackageItem[] = [
     recommendedVehicleId: 'traveller-16',
     isCustomQuote: true,
     description:
-      'Yamunotri, Gangotri, Kedarnath & Badrinath in high-torque Innova Crysta, Force Urbania, or Tempo Travellers with Green-Card certified mountain drivers.',
+      'Yamunotri, Gangotri, Kedarnath & Badrinath in high-torque Force Urbania and Maharaja Tempo Travellers with Green-Card certified mountain drivers.',
     highlights: [
       { icon: 'verified', text: 'Green Card Certified' },
       { icon: 'luggage', text: 'Full Group Comfort' },
@@ -229,14 +228,14 @@ export const CUSTOMER_TESTIMONIALS: TestimonialItem[] = [
     tripContext: 'Family Vacation • Delhi to Jaipur & Pushkar',
     rating: 5,
     quote:
-      'We hired an Innova Crysta for a family trip to Jaipur and Pushkar with elderly parents. Ride comfort was top-notch and our chauffeur Manoj ji was exceptionally courteous and patient.',
+      'We hired a luxury Force Urbania for a family road trip to Jaipur and Pushkar with elderly parents. Ride comfort was exceptional, reclining captain seats were plush, and chauffeur Manoj ji was courteous and patient.',
   },
   {
     name: 'Rajinder Grover & Group',
     tripContext: 'Pilgrimage • 16-Seater Char Dham Yatra',
     rating: 5,
     quote:
-      'Completed our 11-day Char Dham Yatra in a 16-seater Tempo Traveller. Mountain driving demands real skill, and our JMD captain drove smoothly and safely throughout. Jai Maa Durge!',
+      'Completed our 11-day Char Dham Yatra in a 16-seater Tempo Traveller. Mountain driving demands real skill, and our JMD captain drove smoothly and safely throughout. Jai Maa Durga!',
   },
   {
     name: 'Pooja & Kunal Singhania',
@@ -250,7 +249,7 @@ export const CUSTOMER_TESTIMONIALS: TestimonialItem[] = [
 export const FAQ_ITEMS: FAQItem[] = [
   {
     id: 'faq-1',
-    question: 'How do I book a cab, Force Urbania, or bus with JMD Tour & Travels?',
+    question: 'How do I book a Force Urbania, Tempo Traveller, or Bus with JMD Tour & Travels?',
     answer:
       'Enter your pickup location, destination, travel dates, and preferred vehicle in our live Route & Fare Calculator, then click Book Now / Request Best Fare to send your enquiry on WhatsApp (+91 88593 64336). Our dispatch desk will verify availability and confirm your final quotation.',
   },
@@ -270,18 +269,18 @@ export const FAQ_ITEMS: FAQItem[] = [
     id: 'faq-4',
     question: 'Can I book both One-Way drops and multi-day Round-Trip outstation journeys?',
     answer:
-      'Yes! Both our Booking Form and Fare Calculator support One-Way drops and multi-day Outstation Round Trips, as well as Local 8Hr/80KM city packages and Airport Transfers.',
+      'Yes! Both our Booking Form and Fare Calculator support One-Way group drops and multi-day Outstation Round Trips, as well as Local 8Hr/80KM city packages and Airport Transfers.',
   },
   {
     id: 'faq-5',
     question: 'Do you provide Force Urbania, Tempo Travellers, and 35–50 Seater Buses for hills and weddings?',
     answer:
-      'Yes. Our commercial fleet spans 4-seater Sedans, Ertiga/Carens, Innova Crysta, Premium SUVs, 9–20 Seater Tempo Travellers, 10–17 Seater Force Urbania vans, Mini Buses, and 35–50 Seater Luxury AC Buses with experienced hill-certified chauffeurs.',
+      'Yes. Our commercial fleet specializes in 10–13 Seater & 17-Seater Force Urbania luxury vans, 9–20 Seater Maharaja Tempo Travellers, AC Mini Buses, and 35–50 Seater Luxury Air-Suspension Coaches with seasoned hill-certified chauffeurs.',
   },
   {
     id: 'faq-6',
     question: 'What are the driver allowance (batta) and night driving charges?',
     answer:
-      'Driver daily allowance ranges from ₹350/day (Sedans) to ₹400–₹600/day (SUVs, Travellers, Urbania) and ₹700–₹1,000/day (Mini & Luxury Buses) to cover chauffeur meals and rest. If driving is required between 10:00 PM and 5:00 AM, a standard night charge per night applies.',
+      'Driver daily allowance ranges from ₹500–₹600/day for Tempo Travellers & Force Urbania and ₹700–₹1,000/day for Mini & Luxury Buses to cover chauffeur meals and rest. If driving is required between 10:00 PM and 5:00 AM, a standard night charge per night applies.',
   },
 ];

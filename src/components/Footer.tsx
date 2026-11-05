@@ -5,12 +5,14 @@ import { JourneyType } from '../types/travel';
 import { buildWhatsAppUrl } from '../utils/whatsappBooking';
 
 const FOOTER_FLEET_SUMMARY = [
-  { label: 'Sedan (Dzire / Etios)', vehicleId: 'sedan', capacityLabel: '4 Seater' },
-  { label: 'Ertiga / Kia Carens', vehicleId: 'ertiga-carens', capacityLabel: '6 Seater' },
-  { label: 'Toyota Innova Crysta', vehicleId: 'innova-crysta', capacityLabel: '7 Seater' },
-  { label: 'Force Urbania Vans', vehicleId: 'urbania-10-13', capacityLabel: '10–17 Seater' },
-  { label: 'Tempo Travellers', vehicleId: 'traveller-16', capacityLabel: '9–20 Seater' },
-  { label: 'Mini & Luxury AC Buses', vehicleId: 'bus-35-40', capacityLabel: '25–50 Seater' },
+  { label: 'Force Urbania (10–13S)', vehicleId: 'urbania-10-13', capacityLabel: '13 Seater' },
+  { label: 'Force Urbania (17S VIP)', vehicleId: 'urbania-17', capacityLabel: '17 Seater' },
+  { label: 'Tempo Traveller (9–12S)', vehicleId: 'traveller-9-12', capacityLabel: '12 Seater' },
+  { label: 'Tempo Traveller (16S)', vehicleId: 'traveller-16', capacityLabel: '16 Seater' },
+  { label: 'Maharaja Traveller (20S)', vehicleId: 'traveller-20', capacityLabel: '20 Seater' },
+  { label: 'AC Luxury Mini Bus', vehicleId: 'mini-bus', capacityLabel: '27 Seater' },
+  { label: 'Deluxe AC Bus (35–40S)', vehicleId: 'bus-35-40', capacityLabel: '40 Seater' },
+  { label: 'Volvo / BharatBenz (45–50S)', vehicleId: 'bus-45-50', capacityLabel: '50 Seater' },
 ];
 
 export const Footer: React.FC = () => {
@@ -52,24 +54,26 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl">
           {/* Column 1: Brand Summary */}
           <div className="flex flex-col gap-space-md">
-            <div className="flex items-center gap-space-sm">
-              <div className="w-10 h-10 rounded-lg bg-surface-canvas/10 flex items-center justify-center shrink-0">
-                <span className="material-symbols-outlined text-rating-gold text-[24px]" aria-hidden="true">
-                  directions_car
-                </span>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+              <div className="h-16 sm:h-20 w-36 sm:w-48 rounded-2xl bg-white flex items-center justify-center p-2 shrink-0 shadow-md border-2 border-red-500/40 hover:scale-105 transition-transform">
+                <img
+                  src={contactConfig.logoUrl}
+                  alt={`${contactConfig.businessName} Logo`}
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div className="flex flex-col">
-                <span className="text-title-md text-surface-canvas font-bold">
+                <span className="text-title-lg text-surface-canvas font-black tracking-tight">
                   {contactConfig.shortName}
                 </span>
-                <span className="text-label-sm text-secondary-fixed-dim">
-                  Jai Maa Durge Tour &amp; Travels
+                <span className="text-label-sm text-red-400 font-extrabold uppercase tracking-wider">
+                  Jai Maa Durga • Empire to Legacy
                 </span>
               </div>
             </div>
 
             <p className="text-body-sm text-surface-container-high leading-relaxed">
-              Your trusted outstation cab, Force Urbania, Tempo Traveller, and luxury coach rental partner across North India. Dedicated to clean vehicles, verified highway chauffeurs, and transparent per-kilometre tariffs.
+              Your premier group travel and road trip partner across North India. Dedicated to premium Force Urbania luxury vans, 9–20 seater Maharaja Tempo Travellers, and AC luxury coaches with certified highway chauffeurs.
             </p>
 
             <div className="flex items-center gap-space-sm">

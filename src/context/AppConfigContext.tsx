@@ -385,11 +385,11 @@ export const AppConfigProvider: React.FC<{ children: React.ReactNode }> = ({ chi
   const [routeError, setRouteError] = useState<string | null>(null);
 
   const [journeyType, setJourneyTypeState] = useState<JourneyType>(JourneyType.ROUND_TRIP);
-  const [selectedVehicleId, setSelectedVehicleIdState] = useState<string>('innova-crysta');
+  const [selectedVehicleId, setSelectedVehicleIdState] = useState<string>('urbania-10-13');
 
   const [passengerName, setPassengerName] = useState<string>('');
   const [passengerMobile, setPassengerMobile] = useState<string>('');
-  const [passengers, setPassengers] = useState<number>(4);
+  const [passengers, setPassengers] = useState<number>(10);
   const [travelDate, setTravelDateState] = useState<string>(() => getTomorrowDateString(1));
   const [returnDate, setReturnDateState] = useState<string>(() => getTomorrowDateString(2));
   const [pickupTime, setPickupTime] = useState<string>('06:00');

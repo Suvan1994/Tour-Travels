@@ -184,9 +184,12 @@ export const FareCalculator: React.FC<{ hasMapsApiKey: boolean }> = ({ hasMapsAp
                 <div className="flex flex-col gap-1">
                   <label
                     htmlFor="calcVehicleSelect"
-                    className="text-label-md text-on-surface font-semibold"
+                    className="text-label-md text-on-surface font-semibold flex items-center gap-1"
                   >
-                    Vehicle Category
+                    <span className="material-symbols-outlined text-secondary text-[16px]" aria-hidden="true">
+                      airport_shuttle
+                    </span>
+                    <span>Urbania / Traveller / Bus</span>
                   </label>
                   <select
                     id="calcVehicleSelect"

@@ -30,28 +30,28 @@ export const Navbar: React.FC<{ hasQuotaBanner?: boolean }> = ({ hasQuotaBanner 
         hasQuotaBanner ? 'sticky top-10' : 'fixed top-0 left-0 right-0'
       } w-full z-40 bg-surface-glass backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-b border-border-subtle`}
     >
-      <div className="h-20 w-full max-w-[1440px] mx-auto px-3 sm:px-5 lg:px-6 flex items-center justify-between gap-2 lg:gap-3 2xl:gap-5">
+      <div className="h-20 sm:h-22 w-full max-w-[1440px] mx-auto px-3 sm:px-5 lg:px-6 flex items-center justify-between gap-2 lg:gap-3 2xl:gap-5">
         {/* Brand Identity */}
         <a
           href="#home"
           onClick={() => setActiveHref('#home')}
-          className="flex items-center gap-2 sm:gap-2.5 shrink-0 min-w-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-route-active rounded-lg"
+          className="flex items-center gap-2 sm:gap-3 shrink-0 min-w-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-route-active rounded-xl py-1 group"
         >
-          <div className="h-9 w-9 rounded-lg overflow-hidden bg-primary-container flex items-center justify-center shrink-0">
+          <div className="h-13 sm:h-16 w-28 sm:w-40 md:w-48 rounded-xl sm:rounded-2xl overflow-hidden bg-white shadow-md border-2 border-red-500/40 flex items-center justify-center p-1 sm:p-1.5 shrink-0 group-hover:scale-105 group-hover:shadow-lg transition-all">
             <ResilientImage
               src={contactConfig.logoUrl}
-              alt={`${contactConfig.shortName} Logo`}
-              className="h-8 w-auto object-contain"
-              fallbackIcon="directions_car"
+              alt={`${contactConfig.businessName} Logo`}
+              className="h-full w-full object-contain"
+              fallbackIcon="directions_bus"
               eager
             />
           </div>
           <div className="flex flex-col min-w-0">
-            <span className="text-[16px] sm:text-[17px] 2xl:text-title-md text-primary font-bold tracking-tight leading-none whitespace-nowrap">
+            <span className="text-[15px] sm:text-[18px] 2xl:text-title-md text-primary font-black tracking-tight leading-none whitespace-nowrap">
               {contactConfig.shortName}
             </span>
-            <span className="text-[9.5px] 2xl:text-label-sm text-secondary tracking-wide uppercase font-semibold mt-1 hidden sm:block whitespace-nowrap truncate max-w-[205px] 2xl:max-w-none">
-              {contactConfig.subtitle}
+            <span className="text-[10px] sm:text-[11px] 2xl:text-label-sm text-red-600 font-extrabold tracking-wider uppercase mt-1 whitespace-nowrap truncate max-w-[140px] sm:max-w-[220px] 2xl:max-w-none">
+              Jai Maa Durga • Luxury Fleet
             </span>
           </div>
         </a>
@@ -165,7 +165,26 @@ export const Navbar: React.FC<{ hasQuotaBanner?: boolean }> = ({ hasQuotaBanner 
           id="mobile-nav-drawer"
           className="xl:hidden bg-surface-canvas border-t border-primary-container/10 shadow-xl px-4 sm:px-6 py-space-md flex flex-col gap-space-sm"
         >
-          <nav aria-label="Mobile Navigation" className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          {/* Mobile Branded Header Card */}
+          <div className="flex items-center gap-3 p-2.5 rounded-xl bg-surface-subtle border border-red-500/30">
+            <div className="h-12 w-28 rounded-lg bg-white p-1 border border-red-500/30 flex items-center justify-center shrink-0 shadow-sm">
+              <img
+                src={contactConfig.logoUrl}
+                alt={`${contactConfig.businessName} Logo`}
+                className="h-full w-full object-contain"
+              />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-label-md font-extrabold text-primary leading-tight">
+                {contactConfig.businessName}
+              </span>
+              <span className="text-[10px] text-red-600 font-bold uppercase tracking-wider mt-0.5 leading-tight">
+                Where Luxury &amp; Exploration Meet
+              </span>
+            </div>
+          </div>
+
+          <nav aria-label="Mobile Navigation" className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">
             {NAV_ITEMS.map((item) => (
               <a
                 key={item.href}

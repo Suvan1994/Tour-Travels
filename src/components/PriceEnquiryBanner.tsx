@@ -23,9 +23,9 @@ export const PriceEnquiryBanner: React.FC = () => {
   const [mobile, setMobile] = useState('');
   const [pickup, setPickup] = useState('');
   const [destination, setDestination] = useState('');
-  const [vehicleId, setVehicleId] = useState('innova-crysta');
+  const [vehicleId, setVehicleId] = useState('urbania-10-13');
   const [journeyType, setJourneyType] = useState<JourneyType>(JourneyType.ROUND_TRIP);
-  const [passengers, setPassengers] = useState<number>(6);
+  const [passengers, setPassengers] = useState<number>(12);
   const [travelDate, setTravelDate] = useState(defaultTravelDate);
   const [returnDate, setReturnDate] = useState(defaultReturnDate);
   const [notes, setNotes] = useState('');

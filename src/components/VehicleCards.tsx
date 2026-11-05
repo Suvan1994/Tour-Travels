@@ -6,11 +6,10 @@ import { buildWhatsAppUrl } from '../utils/whatsappBooking';
 import { ResilientImage } from './ResilientImage';
 
 const CATEGORY_FILTERS: { id: VehicleCategory; label: string }[] = [
-  { id: VehicleCategory.ALL, label: 'All Vehicles (12)' },
-  { id: VehicleCategory.SEDAN_SUV, label: 'Sedans & SUVs' },
-  { id: VehicleCategory.URBANIA, label: 'Force Urbania' },
-  { id: VehicleCategory.TEMPO, label: 'Tempo Travellers' },
-  { id: VehicleCategory.BUS, label: 'Mini & Luxury Buses' },
+  { id: VehicleCategory.ALL, label: 'All Fleet (8)' },
+  { id: VehicleCategory.URBANIA, label: 'Force Urbania (10–17S)' },
+  { id: VehicleCategory.TEMPO, label: 'Tempo Travellers (9–20S)' },
+  { id: VehicleCategory.BUS, label: 'Mini & Luxury Buses (27–50S)' },
 ];
 
 export const VehicleCards: React.FC = () => {
