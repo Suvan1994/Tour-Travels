@@ -22,6 +22,5 @@ export const DEFAULT_CONTACT_CONFIG: ContactInformation = {
     'Agra Expressway Desk',
     'Haridwar Station Desk',
   ],
-  logoUrl:
-    '/assets/aistudio/WhatsApp_Image_2026-11-04_at_5.24.37_PM_4b3d15fe.jpeg',
+  logoUrl: '/assets/aistudio/logo_trimmed.png',
 };

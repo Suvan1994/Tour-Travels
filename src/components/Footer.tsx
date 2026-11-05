@@ -55,7 +55,7 @@ export const Footer: React.FC = () => {
           {/* Column 1: Brand Summary */}
           <div className="flex flex-col gap-space-md">
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
-              <div className="h-16 sm:h-20 w-36 sm:w-48 rounded-2xl bg-white flex items-center justify-center p-2 shrink-0 shadow-md border-2 border-red-500/40 hover:scale-105 transition-transform">
+              <div className="h-14 sm:h-16 w-16 sm:w-20 rounded-xl bg-white flex items-center justify-center p-1.5 shrink-0 shadow-sm border border-slate-200/90 hover:scale-105 transition-transform">
                 <img
                   src={contactConfig.logoUrl}
                   alt={`${contactConfig.businessName} Logo`}

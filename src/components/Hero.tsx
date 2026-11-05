@@ -203,8 +203,8 @@ export const Hero: React.FC = () => {
         {/* Top Header Row: Official Logo Badge & Floating Heritage Location Pill */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-space-lg">
           {/* Prominent Official Logo Badge */}
-          <div className="flex items-center gap-3 bg-white/95 text-slate-900 p-2 sm:p-2.5 pr-4 sm:pr-5 rounded-2xl shadow-2xl border-2 border-red-500/50 backdrop-blur-md hover:scale-[1.02] transition-transform w-fit">
-            <div className="h-12 sm:h-14 w-28 sm:w-36 rounded-xl bg-white flex items-center justify-center p-1 shadow-sm">
+          <div className="flex items-center gap-3 bg-white/95 text-slate-900 p-2 sm:p-2.5 pr-4 sm:pr-5 rounded-2xl shadow-xl border border-slate-200/90 backdrop-blur-md hover:scale-[1.02] transition-transform w-fit">
+            <div className="h-12 w-14 sm:h-14 sm:w-16 rounded-xl bg-white flex items-center justify-center p-1 shadow-sm border border-slate-200/80 shrink-0">
               <img
                 src={contactConfig.logoUrl}
                 alt={`${contactConfig.businessName} Official Logo`}
